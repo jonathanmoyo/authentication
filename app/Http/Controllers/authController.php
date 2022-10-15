@@ -39,7 +39,7 @@ class authController extends Controller
         if(!$user || !Hash::check($fields['password'],$user->password))
         {
             return Response([
-                'message'=>'bad creds'
+                'message'=>'bad credits'
             ],401);
         }
 
